@@ -2,7 +2,7 @@ frase = 'O python é uma linguagem de programação '\
     'multiparadigma' \
     'python foi criado por Guido Van Rossum'
 
-print(frase.count('python')) # count - verifica quantas vezes o caractere a aparece. 
+#print(frase.count('python')) # count - verifica quantas vezes o caractere a aparece. 
 
 i = 0 
 qtd_apareceu_mais_vezes = 0
