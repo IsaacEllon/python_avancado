@@ -1,5 +1,6 @@
 # Exercício - sistema de perguntas e respostas
 
+
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
@@ -18,6 +19,7 @@ perguntas = [
     },
 ]
 
+qtd_acertos = 0
 for pergunta in perguntas:
     print('Pergunta:', pergunta['Pergunta'])
     print()
@@ -41,10 +43,15 @@ for pergunta in perguntas:
             if opcoes[escolha_int] == pergunta['Resposta']:
                 acertou = True
 
+    print()
     if acertou:
-        print('Acertou')
+        qtd_acertos += 1
+        print('Acertou 👍')
     else:
-        print('Errou')
+        print('Errou ❌')
 
     print()
-    break
+
+
+print('Você acertou', qtd_acertos)
+print('de', len(perguntas), 'perguntas.')
