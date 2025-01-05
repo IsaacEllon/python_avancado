@@ -1,0 +1,2 @@
+
+for pergunta in perguntas:
