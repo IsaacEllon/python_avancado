@@ -23,11 +23,18 @@ lista = [
      {'nome': 'Aline', 'sobrenome': 'Souza'},
  ]
 
-def orderna(item):
-    return item['sobrenome']
+ 
+def exibir(lista):
+    for item in lista:
+        print(item)
+    print()
+
+#lista.sort(key=lambda item: item['nome'])
+l1 = sorted(lista, key=lambda item: item['nome'])
+l2 = sorted(lista, key=lambda item: item['nome'])
+
+exibir(l1)
+exibir(l2)
 
 
-lista.sort(key=orderna)
 
-for item in lista:
-    print(item)
